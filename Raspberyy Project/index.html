@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grease Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Grease Gallery</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search in Gallery" />
+            <button onclick="searchData()">Search</button>
+        </div>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="uploadImage()">Upload and Analyze</button>
+        </div>
+        
+        <div class="compare-section">
+            <h2>Compare</h2>
+            <div class="sample-section">
+                <h3>Standard Sample Color Data</h3>
+                <div id="standardSample"></div>
+            </div>
+            <div class="sample-section">
+                <h3>Tested Sample Color Data</h3>
+                <div id="testedSample"></div>
+            </div>
+            <div class="delta-section">
+                <h3>Color Difference</h3>
+                <div id="deltaValues"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
